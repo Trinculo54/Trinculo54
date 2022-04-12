@@ -1,5 +1,5 @@
-<h2 align="center">Hi <img
-src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" />, I'm Trinculo54</h2>
+<h1 align="center">Hi <img
+src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" />, I'm Trinculo54</h1>
 <h3 align="center">professional human for 15 years and counting</h3><br>
 <h2>About me</h2>
 <p align="left"> 
