@@ -5,13 +5,13 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <h3 align="center">professional human for 15 years and counting</h3><br>
 <h2>About me</h2>
 <p align="center"> 
-  <img src="https://img.shields.io/badge/OS-macOS-lightgrey/?logo=apple&style=for-the-badge" alt="os">
-  <img src="https://img.shields.io/badge/Editor-VS%20Code-blue/?logo=visualstudiocode&logoColor=blue&color=blue&style=for-the-badge" alt="editor">
-  <img src="https://img.shields.io/badge/Listens%20to-Spotify-blue/?logo=spotify&logoColor=warning&color=1DB954&style=for-the-badge" alt="music">
-  <img src="https://img.shields.io/badge/Knows-JavaScript-blue/?logo=javascript&logoColor=warning&color=yellow&style=for-the-badge" alt="js">
-  <img src="https://img.shields.io/badge/Knows-HTML-blue/?logo=html5&logoColor=warning&color=orange&style=for-the-badge" alt="html">
-  <img src="https://img.shields.io/badge/Uses-stackoverflow-blue/?logo=stackoverflow&logoColor=warning&color=ef8236&style=for-the-badge" alt="stack">
-  <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/Trinculo54?color=yellow&label=User%20Stars&logo=github&logoColor=yellow&style=for-the-badge">
+  <img src="https://img.shields.io/badge/OS-macOS-lightgrey/?logo=apple&style=flat-square" alt="os">
+  <img src="https://img.shields.io/badge/Editor-VS%20Code-blue/?logo=visualstudiocode&logoColor=blue&color=blue&style=flat-square" alt="editor">
+  <img src="https://img.shields.io/badge/Listens%20to-Spotify-blue/?logo=spotify&logoColor=warning&color=1DB954&style=flat-square" alt="music">
+  <img src="https://img.shields.io/badge/Knows-JavaScript-blue/?logo=javascript&logoColor=warning&color=yellow&style=flat-square" alt="js">
+  <img src="https://img.shields.io/badge/Knows-HTML-blue/?logo=html5&logoColor=warning&color=orange&style=flat-square" alt="html">
+  <img src="https://img.shields.io/badge/Uses-stackoverflow-blue/?logo=stackoverflow&logoColor=warning&color=ef8236&style=flat-square" alt="stack">
+  <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/Trinculo54?color=yellow&label=User%20Stars&logo=github&logoColor=yellow&style=flat-square">
        </p>
 
 - 🔭 I’m currently working on [my website](https://www.trinculo54.dev).
