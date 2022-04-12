@@ -1,4 +1,4 @@
-<h3 align="center"><img height="150" width="300" src="https://www.trinculo54.tech/images/log0.png"></h3>
+<h3 align="center"><img height="100" width="200" src="https://www.trinculo54.tech/images/log0.png"></h3>
 <h2 align="center">Hi <img
 src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" />, I'm Trinculo54</h2>
 <h3 align="center">professional human for 15 years and counting</h3><br>
