@@ -1,10 +1,10 @@
 <br>
+<img src="https://www.trinculo54.tech/images/log0.png">
 <br>
 <h1 align="center">Hi <img
 src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" />, I'm Trinculo54</h1>
 <h3 align="center">professional human for 15 years and counting</h3><br>
 <h2>About me</h2>
----
 <p align="center"> 
   <img src="https://img.shields.io/badge/OS-macOS-lightgrey/?logo=apple&style=flat-square" alt="os">
   <img src="https://img.shields.io/badge/Editor-VS%20Code-blue/?logo=visualstudiocode&logoColor=blue&color=blue&style=flat-square" alt="editor">
