@@ -1,5 +1,5 @@
 <br>
-<img src="https://www.trinculo54.tech/images/log0.png">
+<img align="center" src="https://www.trinculo54.tech/images/log0.png">
 <br>
 <h1 align="center">Hi <img
 src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" />, I'm Trinculo54</h1>
