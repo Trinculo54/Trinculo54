@@ -25,7 +25,6 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <h2 align="left">Stats</h2>
 
 <p><img  src="https://github-readme-stats.vercel.app/api/top-langs?username=Trinculo54&show_icons=true&theme=dark&locale=en&langs_count=10&layout=compact" alt="3kh0" /></p>
-<p>&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=Trinculo54&show_icons=true&theme=dark&locale=en" alt="3kh0" /></p>
 <p><img src="https://github-readme-streak-stats.herokuapp.com/?user=Trinculo54&theme=dark" alt="3kh0" /></p><br>
   </html>
 
