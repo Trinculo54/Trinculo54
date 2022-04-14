@@ -22,8 +22,10 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 
 <h2 align="left">Stats</h2>
 
-<p><img  src="https://github-readme-stats.vercel.app/api/top-langs?username=Trinculo54&show_icons=true&theme=dark&locale=en&langs_count=10&layout=compact" alt="3kh0" /></p>
-<p><img src="https://github-readme-streak-stats.herokuapp.com/?user=Trinculo54&theme=dark" alt="3kh0" /></p><br>
+[![](https://raw.githubusercontent.com/Trinculo54/test4/master/profile-summary-card-output/tokyonight/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/Trinculo54/test4/master/profile-summary-card-output/tokyonight/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards) [![](https://raw.githubusercontent.com/Trinculo54/test4/master/profile-summary-card-output/tokyonight/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/Trinculo54/test4/master/profile-summary-card-output/tokyonight/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards) [![](https://raw.githubusercontent.com/Trinculo54/test4/master/profile-summary-card-output/tokyonight/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+<br>
   </html>
 
 ## Spotify:
