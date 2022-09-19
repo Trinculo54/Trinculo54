@@ -4,6 +4,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <h2>About me</h2>
 <p align="left"> 
   <img src="https://img.shields.io/badge/OS-macOS-lightgrey/?logo=apple&style=flat-square" alt="os">
+  <img src="https://img.shields.io/badge/OS-Windows-lightgrey/?logo=windows&style=flat-square" alt="os2">
   <img src="https://img.shields.io/badge/Editor-VS%20Code-blue/?logo=visualstudiocode&logoColor=blue&color=blue&style=flat-square" alt="editor">
   <img src="https://img.shields.io/badge/Listens%20to-Spotify-blue/?logo=spotify&logoColor=warning&color=1DB954&style=flat-square" alt="music">
   <img src="https://img.shields.io/badge/Knows-JavaScript-blue/?logo=javascript&logoColor=warning&color=yellow&style=flat-square" alt="js">
