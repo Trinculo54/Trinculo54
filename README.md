@@ -13,9 +13,9 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/Trinculo54?color=yellow&label=User%20Stars&logo=github&logoColor=yellow&style=flat-square">
        </p>
 
-- 🔭 I’m currently working on [my website](https://www.trinculo54.dev).
+- 🔭 I’m currently working on School work.
 
-- 🌱 I’m currently learning [Lua](https://developer.roblox.com/en-us/onboarding/intro-to-coding/).
+- 🌱 I’m currently learning [Java](https://docs.oracle.com/javase/8/docs/).
 
 - 👨‍💻 All of my projects are available at [https://github.com/Trinculo54](https://github.com/Trinculo54).
 
