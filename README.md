@@ -11,12 +11,13 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
   <img src="https://img.shields.io/badge/Knows-Lua-blue/?logo=lua&logoColor=blue&color=blue&style=flat-square" alt="lua">
   <img src="https://img.shields.io/badge/Knows-HTML-blue/?logo=html5&logoColor=warning&color=orange&style=flat-square" alt="html">
   <img src="https://img.shields.io/badge/Uses-stackoverflow-blue/?logo=stackoverflow&logoColor=warning&color=ef8236&style=flat-square" alt="stack">
+  <img src="https://img.shields.io/badge/Understands-%20C%23-green/?logo=csharp&logoColor=green&color=green&style=flat-square" alt="C#">
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/Trinculo54?color=yellow&label=User%20Stars&logo=github&logoColor=yellow&style=flat-square">
        </p>
 
 - 🔭 I’m currently working on School work.
 
-- 🌱 I’m currently learning [Java](https://docs.oracle.com/javase/8/docs/).
+- 🌱 I’m currently learning relearning C#.
 
 - 👨‍💻 All of my projects are available at [https://github.com/Trinculo54](https://github.com/Trinculo54).
 
