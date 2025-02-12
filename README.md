@@ -18,7 +18,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 
 - 🔭 I’m currently working on schoolwork.
 
-- 🌱 I’m currently learning Inverse Kinematics.
+- 🌱 I’m currently learning Java... again
 
 - 👨‍💻 All of my projects are available at [https://github.com/Trinculo54](https://github.com/Trinculo54).
 
