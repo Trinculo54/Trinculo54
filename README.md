@@ -1,6 +1,6 @@
 <h1 align="center">Hi <img
 src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" />, I'm Trinculo54</h1>
-<h3 align="center">professional human for 17 years and counting</h3><br>
+<h3 align="center">professional human for 18 years and counting</h3><br>
 <h2>About me</h2>
 <p align="left"> 
   <img src="https://img.shields.io/badge/OS-macOS-lightgrey/?logo=apple&style=flat-square" alt="os">
