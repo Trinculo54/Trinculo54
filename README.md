@@ -7,18 +7,19 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
   <img src="https://img.shields.io/badge/OS-Windows-lightgrey/?logo=windows&style=flat-square" alt="os2">
   <img src="https://img.shields.io/badge/Editor-VS%20Code-blue/?logo=visualstudiocode&logoColor=blue&color=blue&style=flat-square" alt="editor">
   <img src="https://img.shields.io/badge/Listens%20to-Spotify-blue/?logo=spotify&logoColor=warning&color=1DB954&style=flat-square" alt="music">
-  <img src="https://img.shields.io/badge/Knows-%20C%23-green/?logo=csharp&logoColor=green&color=green&style=flat-square" alt="C#">
+  <img src="https://img.shields.io/badge/Knows-%20C%23-green/?logo=sharp&logoColor=green&color=green&style=flat-square" alt="C#">
+  <img src="https://img.shields.io/badge/Knows-%20C-green/?logo=c&logoColor=green&color=green&style=flat-square" alt="C">
+  <img src="https://img.shields.io/badge/Knows-%20C%2B%2B-green/?logo=cplusplus&logoColor=green&color=green&style=flat-square" alt="C++">
+  <img src="https://img.shields.io/badge/Knows-%20Java-green/?color=orange&style=flat-square" alt="Java">
   <img src="https://img.shields.io/badge/Knows-Python-blue/?logo=python&logoColor=blue&color=blue&style=flat-square" alt="python">
   <img src="https://img.shields.io/badge/Knows-JavaScript-blue/?logo=javascript&logoColor=warning&color=yellow&style=flat-square" alt="js">
   <img src="https://img.shields.io/badge/Knows-Lua-blue/?logo=lua&logoColor=blue&color=blue&style=flat-square" alt="lua">
   <img src="https://img.shields.io/badge/Knows-HTML-blue/?logo=html5&logoColor=warning&color=orange&style=flat-square" alt="html">
   <img src="https://img.shields.io/badge/Uses-stackoverflow-blue/?logo=stackoverflow&logoColor=warning&color=ef8236&style=flat-square" alt="stack">
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/Trinculo54?color=yellow&label=User%20Stars&logo=github&logoColor=yellow&style=flat-square">
-       </p>
+</p>
 
-- 🔭 I’m currently working on schoolwork.
-
-- 🌱 I’m currently learning Java... again
+- 🔭 I’m currently working on IBus & KBus manipulation and logging on E series BMWs
 
 - 👨‍💻 All of my projects are available at [https://github.com/Trinculo54](https://github.com/Trinculo54).
 
