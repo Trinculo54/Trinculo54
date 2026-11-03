@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FH2MP - Plans &amp; Pricing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap">
+<style>
+:root {
+  --ctp-rosewater:#f4dbd6; --ctp-flamingo:#f0c6c6; --ctp-pink:#f5bde6; --ctp-mauve:#c6a0f6; --ctp-red:#ed8796;
+  --ctp-maroon:#ee99a0; --ctp-peach:#f5a97f; --ctp-yellow:#eed49f; --ctp-green:#a6da95; --ctp-teal:#8bd5ca;
+  --ctp-sky:#91d7e3; --ctp-sapphire:#7dc4e4; --ctp-blue:#8aadf4; --ctp-lavender:#b7bdf8; --ctp-text:#cad3f5;
+  --ctp-subtext1:#b8c0e0; --ctp-subtext0:#a5adcb; --ctp-overlay2:#939ab7; --ctp-overlay1:#8087a2; --ctp-overlay0:#6e738d;
+  --ctp-surface2:#5b6078; --ctp-surface1:#494d64; --ctp-surface0:#363a4f; --ctp-base:#24273a; --ctp-mantle:#1e2030; --ctp-crust:#181926;
+  --bg:var(--ctp-base); --surface:var(--ctp-mantle); --surface-raised:var(--ctp-surface0);
+  --border:var(--ctp-surface0); --border-strong:var(--ctp-surface1);
+  --text:var(--ctp-text); --text-muted:var(--ctp-subtext0); --text-faint:var(--ctp-overlay1);
+  --heading:var(--ctp-lavender); --accent:var(--ctp-peach); --accent-hover:var(--ctp-yellow); --on-accent:var(--ctp-crust);
+  --link:var(--ctp-blue); --status-works:var(--ctp-sapphire); --status-rough:var(--ctp-yellow); --status-missing:var(--ctp-red);
+  --class-a:#d73417; --class-s1:#8e2bf8; --class-s2:#3c51e9;
+  --radius-sm:6px; --radius-md:10px; --radius-lg:12px; --radius-pill:999px;
+  --shadow-nav:0 1px 3px rgba(0,0,0,.4); --shadow-card-hover:0 4px 20px rgba(0,0,0,.35); --shadow-dialog:0 24px 64px rgba(0,0,0,.55);
+  --font-sans:Roboto, system-ui, Arial, sans-serif;
+  --grad:linear-gradient(90deg, var(--ctp-pink), var(--ctp-peach));
+}
+* { box-sizing:border-box; }
+html { background:var(--ctp-mantle); color-scheme:dark; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:var(--font-sans); font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased; }
+a { color:var(--link); text-decoration:none; }
+.mi { font-family:'Material Icons Outlined'; font-weight:normal; font-style:normal; font-size:20px; line-height:1; display:inline-block; vertical-align:middle; -webkit-font-feature-settings:'liga'; font-feature-settings:'liga'; }
+.wrap { max-width:1200px; margin:0 auto; padding:0 32px; }
+@media (max-width:640px){ .wrap{ padding:0 16px; } }
+
+/* navbar */
+.nav { position:sticky; top:0; z-index:20; height:3.6rem; display:flex; align-items:center; background:color-mix(in srgb, var(--surface) 55%, transparent); backdrop-filter:blur(10px); transition:background-color .25s, box-shadow .25s; }
+.nav.solid { background:var(--surface); box-shadow:var(--shadow-nav); backdrop-filter:none; }
+.nav .wrap { display:flex; align-items:center; gap:1rem; width:100%; }
+.brand { font-weight:900; font-style:italic; letter-spacing:.02em; line-height:1; font-size:1.5rem; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.nav-tag { font-size:.875rem; color:var(--text-muted); white-space:nowrap; }
+.nav-links { display:flex; gap:.25rem; margin-left:auto; list-style:none; padding:0; }
+.nav-links a { display:block; padding:.5rem .9rem; color:var(--ctp-subtext1); font-weight:500; transition:color .15s; }
+.nav-links a:hover { color:var(--ctp-lavender); }
+.nav-links a.active { color:var(--accent); }
+.nav-gold { display:flex; align-items:center; gap:.35rem; font-size:.875rem; color:var(--ctp-yellow); font-weight:500; margin-left:.5rem; white-space:nowrap; }
+@media (max-width:860px){ .nav-links{ display:none; } .nav-gold{ margin-left:auto; } }
+@media (max-width:480px){ .nav-tag{ display:none; } }
+
+/* buttons */
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:.55rem 1.1rem; border-radius:var(--radius-sm); border:1px solid var(--accent); background:var(--accent); color:var(--on-accent); font:inherit; font-weight:400; cursor:pointer; transition:background .15s, border-color .15s; }
+.btn:hover { background:var(--accent-hover); border-color:var(--accent-hover); }
+.btn .mi { font-size:18px; }
+.btn-ghost { background:transparent; color:var(--ctp-lavender); border-color:var(--ctp-lavender); }
+.btn-ghost:hover { background:color-mix(in srgb, var(--ctp-lavender) 12%, transparent); border-color:var(--ctp-lavender); }
+.btn-block { width:100%; }
+
+/* hero */
+.stage { position:relative; margin-top:-3.6rem; min-height:clamp(560px, 44vw, 700px); display:flex; overflow:hidden; }
+.stage video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:saturate(.85); }
+.stage::after { content:""; position:absolute; inset:0;
+  background:linear-gradient(to bottom, transparent 60%, color-mix(in srgb, var(--bg) 55%, transparent) 82%, var(--bg) 100%),
+             linear-gradient(to right, color-mix(in srgb, var(--bg) 85%, transparent) 0%, color-mix(in srgb, var(--bg) 50%, transparent) 45%, transparent 72%); }
+.hero { position:relative; z-index:2; width:100%; display:flex; flex-direction:column; justify-content:center; padding-top:6rem; padding-bottom:6rem; }
+.hero-inner { max-width:640px; }
+.eyebrow { display:inline-flex; align-items:center; gap:.4rem; padding:.2rem .7rem; border-radius:var(--radius-pill); background:color-mix(in srgb, var(--ctp-yellow) 16%, transparent); color:var(--ctp-yellow); font-size:.8rem; font-weight:500; margin-bottom:1rem; }
+.eyebrow .mi { font-size:16px; }
+h1 { margin:0 0 1rem; font-size:3.25rem; font-weight:700; line-height:1.1; color:var(--heading); }
+.gt { background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.lead { font-size:1.25rem; font-weight:300; margin:0 0 1.75rem; }
+.hero-ctas { display:flex; gap:.75rem; flex-wrap:wrap; }
+@media (max-width:640px){ h1{ font-size:2.4rem; } .lead{ font-size:1.1rem; } }
+
+/* stats */
+.stats { position:relative; z-index:3; margin-top:-3rem; display:grid; grid-template-columns:repeat(4,1fr); background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; }
+.stat { padding:1rem 1.25rem; border-left:1px solid var(--border); }
+.stat:first-child { border-left:0; }
+.stat b { display:block; font-size:1.6rem; font-weight:500; color:var(--text); line-height:1.2; }
+.stat span { font-size:.85rem; color:var(--text-muted); }
+@media (max-width:760px){ .stats{ grid-template-columns:repeat(2,1fr); } .stat:nth-child(3){ border-left:0; } .stat:nth-child(n+3){ border-top:1px solid var(--border); } }
+
+/* sections */
+section { padding:3.5rem 0 0; }
+.sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:1.25rem; flex-wrap:wrap; }
+h2 { margin:0; font-size:1.75rem; font-weight:500; color:var(--ctp-blue); }
+.sec-link { color:var(--accent); font-weight:500; display:inline-flex; align-items:center; font-size:.95rem; }
+.sec-link .mi { font-size:20px; }
+.sec-sub { color:var(--text-muted); margin:-.5rem 0 1.5rem; max-width:720px; }
+
+.card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); }
+
+/* billing toggle */
+.seg { display:inline-flex; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-pill); padding:4px; gap:2px; flex-wrap:wrap; }
+.seg button { background:none; border:0; color:var(--ctp-subtext1); font:inherit; font-weight:500; font-size:.9rem; padding:.4rem .95rem; border-radius:var(--radius-pill); cursor:pointer; }
+.seg button.on { background:var(--surface-raised); color:var(--accent); }
+.seg button small { color:var(--ctp-green); font-weight:400; margin-left:.25rem; }
+
+/* plans */
+.plans { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.25rem; }
+@media (max-width:900px){ .plans{ grid-template-columns:1fr; } }
+.plan { padding:1.5rem; display:flex; flex-direction:column; position:relative; transition:box-shadow .2s, border-color .2s; }
+.plan:hover { box-shadow:var(--shadow-card-hover); border-color:var(--border-strong); }
+.plan.hot { border-color:color-mix(in srgb, var(--accent) 60%, transparent); }
+.plan .ribbon { position:absolute; top:-11px; left:1.5rem; background:var(--accent); color:var(--on-accent); font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:var(--radius-pill); letter-spacing:.03em; text-transform:uppercase; }
+.plan-name { display:flex; align-items:center; gap:.5rem; font-size:1.15rem; font-weight:500; color:var(--heading); }
+.cls { display:inline-block; min-width:2rem; text-align:center; font-size:.75rem; font-weight:700; padding:.1rem .4rem; border-radius:4px; color:#fff; font-style:italic; }
+.cls.a { background:var(--class-a); } .cls.s1 { background:var(--class-s1); } .cls.s2 { background:var(--class-s2); }
+.plan-desc { color:var(--text-muted); font-size:.9rem; margin:.35rem 0 1.25rem; min-height:2.7em; }
+.price { display:flex; align-items:baseline; gap:.3rem; }
+.price b { font-size:2.6rem; font-weight:700; color:var(--text); line-height:1; }
+.price span { color:var(--text-muted); }
+.price-note { font-size:.8rem; color:var(--text-faint); margin:.35rem 0 1.25rem; min-height:1.2em; }
+.feat { list-style:none; padding:0; margin:0 0 1.5rem; display:grid; gap:.55rem; font-size:.92rem; flex:1; }
+.feat li { display:flex; gap:.55rem; align-items:flex-start; }
+.feat .mi { font-size:18px; margin-top:2px; }
+.feat .y { color:var(--status-works); } .feat .r { color:var(--status-rough); } .feat .n { color:var(--status-missing); }
+.feat .muted { color:var(--text-faint); }
+
+/* comparison */
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:.92rem; min-width:620px; }
+th, td { padding:.75rem 1.1rem; text-align:left; border-top:1px solid var(--border); }
+thead th { border-top:0; color:var(--text-muted); font-weight:500; font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; }
+thead th:not(:first-child), td:not(:first-child) { text-align:center; }
+td:first-child small { display:block; color:var(--text-faint); font-size:.8rem; }
+.pill { display:inline-flex; align-items:center; gap:.3rem; font-size:.8rem; font-weight:500; }
+.pill .mi { font-size:17px; }
+.pill.w { color:var(--status-works); } .pill.r { color:var(--status-rough); } .pill.x { color:var(--status-missing); }
+
+/* store grid */
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+@media (max-width:900px){ .grid3{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ .grid3{ grid-template-columns:1fr; } }
+.item { padding:1.15rem 1.25rem; display:flex; flex-direction:column; gap:.4rem; }
+.item-top { display:flex; align-items:center; justify-content:space-between; gap:.5rem; }
+.item-icon { width:38px; height:38px; border-radius:var(--radius-md); display:grid; place-items:center; background:var(--surface-raised); color:var(--accent); }
+.item-price { font-weight:700; color:var(--text); }
+.item h3 { margin:.35rem 0 0; font-size:1rem; font-weight:500; color:var(--heading); }
+.item p { margin:0; color:var(--text-muted); font-size:.88rem; }
+.tag { align-self:flex-start; margin-top:.3rem; font-size:.72rem; font-weight:500; padding:.1rem .5rem; border-radius:var(--radius-pill); background:color-mix(in srgb, var(--ctp-mauve) 18%, transparent); color:var(--ctp-mauve); }
+
+/* token */
+.token { display:grid; grid-template-columns:1.2fr 1fr; gap:0; overflow:hidden; }
+@media (max-width:820px){ .token{ grid-template-columns:1fr; } }
+.token-l { padding:1.75rem; }
+.token-l h3 { margin:0 0 .5rem; font-size:1.35rem; color:var(--heading); font-weight:500; }
+.token-l p { color:var(--text-muted); margin:0 0 1rem; }
+.token-r { background:repeating-linear-gradient(-20deg, transparent 0 14px, color-mix(in srgb, var(--ctp-surface0) 70%, transparent) 14px 16px), var(--ctp-crust); padding:1.75rem; display:flex; flex-direction:column; justify-content:center; gap:.85rem; border-left:1px solid var(--border); }
+@media (max-width:820px){ .token-r{ border-left:0; border-top:1px solid var(--border); } }
+.row { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+.row span { color:var(--text-muted); font-size:.9rem; }
+.row b { font-weight:500; }
+.spark { height:46px; width:100%; }
+.down { color:var(--ctp-red); font-size:.85rem; }
+
+/* live list */
+.lb { list-style:none; margin:0; padding:0; }
+.lb li { display:flex; align-items:center; gap:1rem; padding:.7rem 1.1rem; border-top:1px solid var(--border); font-size:.92rem; }
+.lb li:first-child { border-top:0; }
+.lb .pos { width:1.5rem; color:var(--text-faint); font-weight:500; }
+.lb .who { flex:1; }
+.lb .who small { display:block; color:var(--text-faint); font-size:.8rem; }
+.lb .amt { font-variant-numeric:tabular-nums; color:var(--ctp-yellow); font-weight:500; }
+.lb-head { display:flex; justify-content:space-between; align-items:center; padding:.75rem 1.1rem; background:var(--surface-raised); border-radius:var(--radius-lg) var(--radius-lg) 0 0; font-weight:500; }
+.badge { font-size:.75rem; font-weight:500; padding:.1rem .55rem; border-radius:var(--radius-pill); background:color-mix(in srgb, var(--ctp-blue) 25%, transparent); color:var(--ctp-blue); }
+.badge.g { background:color-mix(in srgb, var(--ctp-green) 25%, transparent); color:var(--ctp-green); }
+.split { display:grid; grid-template-columns:1.4fr 1fr; gap:1rem; }
+@media (max-width:820px){ .split{ grid-template-columns:1fr; } }
+.mini { padding:1rem 1.25rem; }
+.mini b { display:block; font-size:1.6rem; font-weight:500; }
+.mini span { font-size:.85rem; color:var(--text-muted); }
+.minis { display:grid; gap:1rem; }
+
+/* faq */
+details { border-top:1px solid var(--border); }
+details:first-child { border-top:0; }
+summary { list-style:none; cursor:pointer; padding:1rem 1.25rem; font-weight:500; display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+summary::-webkit-details-marker { display:none; }
+summary .mi { color:var(--text-faint); transition:transform .2s; }
+details[open] summary .mi { transform:rotate(180deg); }
+details p { margin:0; padding:0 1.25rem 1.1rem; color:var(--text-muted); }
+
+/* keep it running */
+.kir { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding:1.4rem 1.6rem; flex-wrap:wrap; }
+.kir h3 { margin:0 0 .25rem; color:var(--heading); font-weight:500; font-size:1.2rem; }
+.kir p { margin:0; color:var(--text-muted); }
+.kir .acts { display:flex; gap:.6rem; flex-wrap:wrap; }
+
+/* footer */
+footer { margin-top:4rem; background:var(--surface); border-top:1px solid var(--border); padding:2.5rem 0 1.5rem; font-size:.9rem; }
+.fcols { display:grid; grid-template-columns:1.5fr repeat(4,1fr); gap:1.5rem; }
+@media (max-width:760px){ .fcols{ grid-template-columns:1fr 1fr; } }
+.fcols h4 { margin:0 0 .6rem; color:var(--text); font-size:.9rem; font-weight:500; }
+.fcols a { display:block; color:var(--text-muted); padding:.18rem 0; }
+.fcols a:hover { color:var(--ctp-lavender); }
+.legal { margin-top:2rem; padding-top:1.25rem; border-top:1px solid var(--border); color:var(--text-faint); font-size:.8rem; }
+
+/* dialog */
+dialog { background:var(--surface); color:var(--text); border:1px solid var(--border-strong); border-radius:var(--radius-lg); box-shadow:var(--shadow-dialog); padding:0; width:min(440px, calc(100vw - 32px)); }
+dialog::backdrop { background:rgba(24,25,38,.7); backdrop-filter:blur(3px); }
+.dlg-h { display:flex; align-items:center; gap:.6rem; padding:1.1rem 1.25rem; border-bottom:1px solid var(--border); font-weight:500; color:var(--heading); }
+.dlg-h .mi { color:var(--ctp-red); }
+.dlg-b { padding:1.1rem 1.25rem; color:var(--text-muted); }
+.dlg-b ul { margin:.5rem 0 0; padding-left:1.1rem; }
+.dlg-f { display:flex; justify-content:flex-end; gap:.6rem; padding:0 1.25rem 1.1rem; }
+.progress { height:6px; background:var(--surface-raised); border-radius:var(--radius-pill); overflow:hidden; margin-top:.9rem; }
+.progress i { display:block; height:100%; width:0; background:var(--accent); transition:width 2.6s cubic-bezier(.2,.9,.3,1); }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#" class="brand">FH2MP</a>
+    <span class="nav-tag">Forza Horizon 2 online on PC</span>
+    <ul class="nav-links">
+      <li><a href="#">Play</a></li>
+      <li><a href="#">Compete</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#" class="active">Pricing</a></li>
+    </ul>
+    <span class="nav-gold"><span class="mi">savings</span>0 Tokens</span>
+  </div>
+</nav>
+
+<header class="stage">
+  <video autoplay muted loop playsinline src="https://forza.scuffed.af/static/forza/video/hero-loop.4a449fb41e7f.mp4"></video>
+  <div class="hero wrap">
+    <div class="hero-inner">
+      <span class="eyebrow"><span class="mi">bolt</span>New: Subscription required to play</span>
+      <h1>A festival that <span class="gt">truly never ends.</span><br>Neither does your <span class="gt">subscription.</span></h1>
+      <p class="lead">Microsoft shut the servers down in 2023. We brought them back, and frankly, the electricity bill brought us here. FH2MP is now a premium, fan-made, monthly-subscription online service.</p>
+      <div class="hero-ctas">
+        <a href="#plans" class="btn"><span class="mi">credit_card</span>Choose a plan</a>
+        <a href="#token" class="btn btn-ghost"><span class="mi">toll</span>Buy a HORIZON Token</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>3,287</b><span>Former players</span></div>
+    <div class="stat"><b>$14.99</b><span>Per month, forever</span></div>
+    <div class="stat"><b>255</b><span>Car clubs (now guilds)</span></div>
+    <div class="stat"><b>0</b><span>Gameplay changes since paywall</span></div>
+  </div>
+
+  <!-- PLANS -->
+  <section id="plans">
+    <div class="sec-head">
+      <h2>Game Time</h2>
+      <div class="seg" id="seg">
+        <button data-m="1" class="on">1 month</button>
+        <button data-m="3">3 months<small>-7%</small></button>
+        <button data-m="6">6 months<small>-13%</small></button>
+        <button data-m="12">12 months<small>-13%*</small></button>
+      </div>
+    </div>
+    <p class="sec-sub">Every plan requires an active subscription, a copy of the game, a copy of the expansion, and a copy of the expansion's expansion. Prices shown before the Saint-Martin Festival Tax.</p>
+
+    <div class="plans">
+      <div class="card plan">
+        <div class="plan-name"><span class="cls a">A</span>Starter Edition</div>
+        <p class="plan-desc">Try FH2MP free, forever, with only a few small restrictions.</p>
+        <div class="price"><b>$0</b><span>/ month</span></div>
+        <div class="price-note">Level cap 20. Cars capped at 80 km/h.</div>
+        <ul class="feat">
+          <li><span class="mi y">check_circle</span>Online Free Roam (Nice area only)</li>
+          <li><span class="mi r">contrast</span>Car Meets, but you can't open the hood</li>
+          <li><span class="mi r">contrast</span>Chat limited to /wave and /honk</li>
+          <li><span class="mi n">cancel</span>Cannot join Car Clubs</li>
+          <li><span class="mi n">cancel</span>Cannot trade liveries in the storefront</li>
+          <li><span class="mi n">cancel</span>Max 10,000 CR in your wallet</li>
+          <li><span class="mi n">cancel</span>Headlights</li>
+        </ul>
+        <button class="btn btn-ghost btn-block" data-buy="Starter Edition"><span class="mi">download</span>Get started</button>
+      </div>
+
+      <div class="card plan hot">
+        <span class="ribbon">Most popular</span>
+        <div class="plan-name"><span class="cls s1">S1</span>Horizon Pass</div>
+        <p class="plan-desc">The full festival. The way it was meant to be paid for.</p>
+        <div class="price"><b id="p-main">$14.99</b><span>/ month</span></div>
+        <div class="price-note" id="n-main">Billed monthly. Cancel anytime (we'll be sad).</div>
+        <ul class="feat">
+          <li><span class="mi y">check_circle</span>Online Free Roam, Car Meets and matchmaking</li>
+          <li><span class="mi y">check_circle</span>Road Trip, Free for All, Team races, King, Infection</li>
+          <li><span class="mi y">check_circle</span>Rivals and Festival Routes with live leaderboards</li>
+          <li><span class="mi y">check_circle</span>Car Clubs, now called Guilds</li>
+          <li><span class="mi y">check_circle</span>Liveries, tunes and photos</li>
+          <li><span class="mi r">contrast</span>Overall stability (Rough, but now you're paying for it)</li>
+          <li><span class="mi n">cancel</span>Storm Island online</li>
+        </ul>
+        <button class="btn btn-block" data-buy="Horizon Pass"><span class="mi">credit_card</span>Subscribe</button>
+      </div>
+
+      <div class="card plan">
+        <div class="plan-name"><span class="cls s2">S2</span>Epic Collector's Edition</div>
+        <p class="plan-desc">For the true fan who hasn't checked their bank statement in a while.</p>
+        <div class="price"><b id="p-epic">$39.99</b><span>/ month</span></div>
+        <div class="price-note" id="n-epic">Includes Horizon Pass. Doesn't include anything else.</div>
+        <ul class="feat">
+          <li><span class="mi y">check_circle</span>Everything in Horizon Pass</li>
+          <li><span class="mi y">check_circle</span>Exclusive mount: Spectral Lamborghini Huracán</li>
+          <li><span class="mi y">check_circle</span>Cosmetic gold nameplate in the lobby browser</li>
+          <li><span class="mi y">check_circle</span>Priority queue (we have no queue)</li>
+          <li><span class="mi y">check_circle</span>Digital art book: 14 screenshots of the Nice promenade</li>
+          <li><span class="mi y">check_circle</span>Horn, headlights and roof toggle on separate buttons</li>
+          <li><span class="mi n">cancel</span>Storm Island online (still)</li>
+        </ul>
+        <button class="btn btn-ghost btn-block" data-buy="Epic Collector's Edition"><span class="mi">diamond</span>Upgrade</button>
+      </div>
+    </div>
+    <p class="sec-sub" style="margin-top:1rem;font-size:.8rem;color:var(--text-faint)">* The 12-month plan is the same price as the 6-month plan, but you have to promise to stay for 12. Recurring subscription. Renews automatically until the heat death of the universe or the next DMCA, whichever comes first.</p>
+  </section>
+
+  <!-- COMPARE -->
+  <section>
+    <div class="sec-head"><h2>What you're paying for</h2><a href="#" class="sec-link">Full list<span class="mi">chevron_right</span></a></div>
+    <div class="card table-wrap">
+      <table>
+        <thead><tr><th>Feature</th><th>Starter</th><th>Horizon Pass</th><th>Collector's</th></tr></thead>
+        <tbody>
+          <tr><td>Online Free Roam<small>Car Meets and matchmaking</small></td><td><span class="pill r"><span class="mi">contrast</span>Nice only</span></td><td><span class="pill w"><span class="mi">check_circle</span>Works</span></td><td><span class="pill w"><span class="mi">check_circle</span>Works</span></td></tr>
+          <tr><td>Online events<small>Road Trip, FFA, Teams, King, Infection</small></td><td><span class="pill x"><span class="mi">cancel</span>No</span></td><td><span class="pill w"><span class="mi">check_circle</span>Works</span></td><td><span class="pill w"><span class="mi">check_circle</span>Works</span></td></tr>
+          <tr><td>Rivals<small>Monthly, Showcase, Festival Routes</small></td><td><span class="pill r"><span class="mi">contrast</span>View only</span></td><td><span class="pill w"><span class="mi">check_circle</span>Works</span></td><td><span class="pill w"><span class="mi">check_circle</span>Works</span></td></tr>
+          <tr><td>Horns in Free Roam<small>New in 1.1.4</small></td><td><span class="pill x"><span class="mi">cancel</span>Muted</span></td><td><span class="pill w"><span class="mi">check_circle</span>1 horn</span></td><td><span class="pill w"><span class="mi">check_circle</span>All horns</span></td></tr>
+          <tr><td>Overall stability<small>Crashes still happen</small></td><td><span class="pill r"><span class="mi">contrast</span>Rough</span></td><td><span class="pill r"><span class="mi">contrast</span>Rough</span></td><td><span class="pill r"><span class="mi">contrast</span>Premium rough</span></td></tr>
+          <tr><td>Storm Island online<small>Lobbies, events and Rivals</small></td><td><span class="pill x"><span class="mi">cancel</span>No</span></td><td><span class="pill x"><span class="mi">cancel</span>No</span></td><td><span class="pill x"><span class="mi">cancel</span>Pay $25 to not have it</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TOKEN -->
+  <section id="token">
+    <div class="sec-head"><h2>HORIZON Token</h2><a href="#" class="sec-link">Auction House<span class="mi">chevron_right</span></a></div>
+    <div class="card token">
+      <div class="token-l">
+        <h3>Pay for Game Time with Credits.</h3>
+        <p>Buy a HORIZON Token for real money and sell it to another player for in-game Credits. Or grind 47 Wheelspins' worth of drift zones and buy one yourself. One token = 30 days of Game Time. The economy is totally fine and not at all inflated by people who never close the game.</p>
+        <div class="hero-ctas">
+          <button class="btn" data-buy="HORIZON Token"><span class="mi">toll</span>Buy for $20.00</button>
+          <button class="btn btn-ghost" data-buy="HORIZON Token (credits)"><span class="mi">sell</span>Buy with Credits</button>
+        </div>
+      </div>
+      <div class="token-r">
+        <div class="row"><span>Current market price</span><b style="color:var(--ctp-yellow)" id="tok">12,480,000 CR</b></div>
+        <svg class="spark" viewBox="0 0 300 46" preserveAspectRatio="none" aria-hidden="true">
+          <polyline fill="none" stroke="var(--ctp-peach)" stroke-width="2" points="0,40 20,38 40,36 60,37 80,33 100,30 120,31 140,26 160,24 180,22 200,18 220,19 240,14 260,10 280,7 300,3"/>
+        </svg>
+        <div class="row"><span>Your wallet</span><b>8,412 CR</b></div>
+        <div class="row"><span>Drift zones until you can afford one</span><b class="down">≈ 1,483</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <div class="sec-head"><h2>Account services</h2><a href="#" class="sec-link">Shop<span class="mi">chevron_right</span></a></div>
+    <div class="grid3">
+      <div class="card item"><div class="item-top"><div class="item-icon"><span class="mi">swap_horiz</span></div><span class="item-price">$25.00</span></div><h3>Garage Transfer</h3><p>Move a car from one save to another. Takes 3 to 5 business days. The car is not driven during transit.</p></div>
+      <div class="card item"><div class="item-top"><div class="item-icon"><span class="mi">badge</span></div><span class="item-price">$10.00</span></div><h3>Gamertag Change</h3><p>Finally get rid of xX_DriftKing2014_Xx. Your Car Club will still remember.</p></div>
+      <div class="card item"><div class="item-top"><div class="item-icon"><span class="mi">flag</span></div><span class="item-price">$30.00</span></div><h3>Faction Change</h3><p>Defect from Team Red to Team Blue. Includes one (1) dramatic leaving post in club chat.</p><span class="tag">For the Horizon</span></div>
+      <div class="card item"><div class="item-top"><div class="item-icon"><span class="mi">rocket_launch</span></div><span class="item-price">$60.00</span></div><h3>Level 50 Boost</h3><p>Skip straight to Horizon Superstar. Comes with no idea how to brake.</p></div>
+      <div class="card item"><div class="item-top"><div class="item-icon"><span class="mi">tune</span></div><span class="item-price">$15.00</span></div><h3>Class Change</h3><p>Turn your A-class car into S1 without touching the tune menu. We just change the sticker.</p></div>
+      <div class="card item"><div class="item-top"><div class="item-icon"><span class="mi">group_add</span></div><span class="item-price">Free*</span></div><h3>Recruit-a-Friend</h3><p>Bring a friend and you both get 3x XP. *They need to subscribe. So do you, still.</p><span class="tag">Limited time</span></div>
+    </div>
+  </section>
+
+  <!-- LIVE -->
+  <section>
+    <div class="sec-head"><h2>Live right now</h2><a href="#" class="sec-link">All stats<span class="mi">chevron_right</span></a></div>
+    <div class="split">
+      <div class="card">
+        <div class="lb-head">Top spenders this month <span class="badge">1 whale</span></div>
+        <ul class="lb">
+          <li><span class="pos">1</span><span class="who">ACIDSIDE444<small>Collector's, 14 Tokens, 3 Faction Changes</small></span><span class="amt">$412.86</span></li>
+          <li><span class="pos">2</span><span class="who">JDT<small>Horizon Pass, 12-month plan</small></span><span class="amt">$155.88</span></li>
+          <li><span class="pos">3</span><span class="who">Hxrm0nyyy<small>Bought the Level 50 Boost twice by accident</small></span><span class="amt">$134.99</span></li>
+          <li><span class="pos">4</span><span class="who">Cprl Punishment<small>Starter Edition, refuses on principle</small></span><span class="amt">$0.00</span></li>
+        </ul>
+      </div>
+      <div class="minis">
+        <div class="card mini"><b>7 / 12</b><span>Paying players in Free Roam lobby d8bb1ad8</span></div>
+        <div class="card mini"><b>90%</b><span>Of revenue spent on the horn update</span></div>
+        <div class="card mini"><b>0</b><span>Refunds issued, all-time</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="sec-head"><h2>Questions</h2></div>
+    <div class="card">
+      <details><summary>Wait, wasn't FH2MP free?<span class="mi">expand_more</span></summary><p>It was. Then we looked at World of Warcraft and thought "they seem fine."</p></details>
+      <details><summary>Do I still need my own copy of the game?<span class="mi">expand_more</span></summary><p>Yes. Your own copy of the Xbox One build 1.0.0.64, a PC on par with a Steam Deck, an Xbox controller, and now a credit card.</p></details>
+      <details><summary>Does paying give me a gameplay advantage?<span class="mi">expand_more</span></summary><p>No. Except that you can play the game at all, which some would call an advantage.</p></details>
+      <details><summary>What happens if my subscription lapses?<span class="mi">expand_more</span></summary><p>Your cars are kept safe for 7 years. Your Car Club will kick you after 3 days.</p></details>
+      <details><summary>When is Storm Island coming online?<span class="mi">expand_more</span></summary><p>It will be the next expansion: <em>FH2MP: Wrath of the Storm Island</em>. Pre-orders open soon. Pre-ordering does not make it come out sooner.</p></details>
+    </div>
+  </section>
+
+  <section>
+    <div class="card kir">
+      <div>
+        <h3>Keep it running</h3>
+        <p>FH2MP is <s>free</s> $14.99/month. Support pays for the servers and gets you no gameplay advantage (except all of it).</p>
+      </div>
+      <div class="acts">
+        <button class="btn" data-buy="Patreon, but mandatory"><span class="mi">favorite</span>Support on Patreon (mandatory)</button>
+        <a href="#" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><a href="#" class="brand" style="font-size:1.5rem;display:inline-block">FH2MP</a><p style="color:var(--text-muted);margin:.5rem 0 0">Forza Horizon 2 online on PC. Now with a monthly fee.</p></div>
+      <div><h4>Play</h4><a href="#">Get started</a><a href="#">What works</a><a href="#">Help</a></div>
+      <div><h4>Pay</h4><a href="#plans">Game Time</a><a href="#token">HORIZON Token</a><a href="#">Account services</a><a href="#">Refund policy (lol)</a></div>
+      <div><h4>Community</h4><a href="#">Live map</a><a href="#">Garage</a><a href="#">Guilds</a></div>
+      <div><h4>Project</h4><a href="#">News</a><a href="#">Changelog</a><a href="#">Fair play</a><a href="#">Privacy</a></div>
+    </div>
+    <div class="legal">This page is a joke. FH2MP is free and nobody is charging you anything. Forza Horizon 2 © Microsoft Corporation. FH2MP is a fan project, not endorsed by or affiliated with Microsoft, and definitely not with Blizzard.</div>
+  </div>
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg-h"><span class="mi">error</span><span id="dlg-title">Purchase failed</span></div>
+  <div class="dlg-b" id="dlg-body"></div>
+  <div class="dlg-f"><button class="btn btn-ghost" id="dlg-close">Close</button></div>
+</dialog>
+
+<script>
+  // nav goes solid after the hero
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('solid', scrollY > 80);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // billing toggle
+  const prices = { 1: [14.99, 39.99], 3: [13.99, 37.99], 6: [12.99, 34.99], 12: [12.99, 34.99] };
+  const notes = {
+    1: ['Billed monthly. Cancel anytime (we\'ll be sad).', 'Includes Horizon Pass. Doesn\'t include anything else.'],
+    3: ['Billed $41.97 every 3 months.', 'Billed $113.97 every 3 months.'],
+    6: ['Billed $77.94 every 6 months.', 'Billed $209.94 every 6 months.'],
+    12: ['Billed $155.88 a year. Same price as 6 months. Trust us.', 'Billed $419.88 a year. Mount sold separately.']
+  };
+  document.querySelectorAll('#seg button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('#seg button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    const m = b.dataset.m;
+    document.getElementById('p-main').textContent = '$' + prices[m][0].toFixed(2);
+    document.getElementById('p-epic').textContent = '$' + prices[m][1].toFixed(2);
+    document.getElementById('n-main').textContent = notes[m][0];
+    document.getElementById('n-epic').textContent = notes[m][1];
+  }));
+
+  // token price only goes up
+  let tok = 12480000;
+  setInterval(() => {
+    tok += Math.floor(Math.random() * 40000) + 5000;
+    document.getElementById('tok').textContent = tok.toLocaleString('en-US') + ' CR';
+  }, 1800);
+
+  // "checkout"
+  const dlg = document.getElementById('dlg');
+  const reasons = [
+    'Your Xbox controller is not linked to a payment method.',
+    'Billing servers are on Storm Island, which is not available online.',
+    'The horn, headlights and roof toggle all ended up on the "Confirm" button.',
+    'Payment requires an active subscription. Subscribe to unlock payments.',
+    'Crashes still happen, and some come from other layers and mods.'
+  ];
+  document.querySelectorAll('[data-buy]').forEach(b => b.addEventListener('click', () => {
+    document.getElementById('dlg-title').textContent = 'Processing ' + b.dataset.buy + '…';
+    document.getElementById('dlg-body').innerHTML = '<p style="margin:0">Contacting the Saint-Martin billing server.</p><div class="progress"><i id="bar"></i></div>';
+    dlg.showModal();
+    requestAnimationFrame(() => requestAnimationFrame(() => document.getElementById('bar').style.width = '97%'));
+    setTimeout(() => {
+      document.getElementById('dlg-title').textContent = 'Purchase failed';
+      document.getElementById('dlg-body').innerHTML = '<p style="margin:0">' + reasons[Math.floor(Math.random() * reasons.length)] + '</p><p style="margin:.75rem 0 0;color:var(--text-faint);font-size:.85rem">Good news: FH2MP is still free. You were never charged.</p>';
+    }, 2700);
+  }));
+  document.getElementById('dlg-close').addEventListener('click', () => dlg.close());
+</script>
+</body>
+</html>
